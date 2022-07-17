@@ -9,5 +9,11 @@ git 指令
     git commit -m""
     git push -u origin main
     
+    分支
+    git branch
+    git branch master
+    git checkout master
+    
+    
 ```
 
