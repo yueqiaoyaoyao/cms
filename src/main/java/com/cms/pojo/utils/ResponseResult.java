@@ -1,4 +1,4 @@
-package com.cms.pojo;
+package com.cms.pojo.utils;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModel;

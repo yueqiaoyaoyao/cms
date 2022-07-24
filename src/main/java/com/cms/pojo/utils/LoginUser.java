@@ -1,7 +1,7 @@
-package com.cms.pojo;
+package com.cms.pojo.utils;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import lombok.AllArgsConstructor;
+import com.cms.pojo.entity.User;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;

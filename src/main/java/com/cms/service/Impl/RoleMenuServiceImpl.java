@@ -1,6 +1,6 @@
 package com.cms.service.Impl;
 
-import com.cms.service.RoleMenuService;
+import com.cms.service.interf.RoleMenuService;
 import org.springframework.stereotype.Service;
 
 @Service

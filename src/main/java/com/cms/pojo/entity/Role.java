@@ -1,4 +1,4 @@
-package com.cms.pojo;
+package com.cms.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -6,22 +6,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName("cms_menu")
-public class Menu {
+@TableName("cms_role")
+public class Role implements Serializable {
+    private static final long serialVersionUID = -6326489691963700467L;
     @TableId
-    private int mid;
-    private String menuName;
-    private String path;
-    private String component;
-    private String visible;
+    private int rid;
+    private String roleName;
+    private String authorities;
     private String status;
-    private String perms;
-    private String icon;
     private Date created;
     private Date updated;
     private String delFlag;

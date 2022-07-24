@@ -1,6 +1,6 @@
 package com.cms.filter;
 
-import com.cms.pojo.LoginUser;
+import com.cms.pojo.utils.LoginUser;
 import com.cms.utils.JwtUtil;
 import com.cms.utils.RedisCache;
 import io.jsonwebtoken.Claims;

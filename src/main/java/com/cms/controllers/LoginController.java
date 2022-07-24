@@ -1,7 +1,7 @@
 package com.cms.controllers;
 
-import com.cms.pojo.ResponseResult;
-import com.cms.pojo.User;
+import com.cms.pojo.utils.ResponseResult;
+import com.cms.pojo.entity.User;
 import com.cms.service.Impl.LoginServiceImpl;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
@@ -33,5 +33,7 @@ public class LoginController {
     public String login() {
         return "hello";
     }
+
+
 
 }

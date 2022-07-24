@@ -1,9 +1,9 @@
 package com.cms.service.Impl;
 
-import com.cms.pojo.LoginUser;
-import com.cms.pojo.ResponseResult;
-import com.cms.pojo.User;
-import com.cms.service.LoginService;
+import com.cms.pojo.utils.LoginUser;
+import com.cms.pojo.utils.ResponseResult;
+import com.cms.pojo.entity.User;
+import com.cms.service.interf.LoginService;
 import com.cms.utils.JwtUtil;
 import com.cms.utils.RedisCache;
 import org.springframework.beans.factory.annotation.Autowired;

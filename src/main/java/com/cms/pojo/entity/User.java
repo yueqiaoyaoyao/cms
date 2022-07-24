@@ -1,4 +1,4 @@
-package com.cms.pojo;
+package com.cms.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -14,7 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @TableName("cms_user")
 public class User implements Serializable {
-
+    private static final long serialVersionUID = -4583923676602987684L;
     @TableId
     private int uid;
     private String userName;
@@ -31,4 +31,5 @@ public class User implements Serializable {
     private Date updated;
     private String delFlag;
     private String remark;
+
 }

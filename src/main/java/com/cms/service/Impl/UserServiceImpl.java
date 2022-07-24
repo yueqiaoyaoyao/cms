@@ -1,8 +1,8 @@
 package com.cms.service.Impl;
 
 import com.cms.mapper.UserMapper;
-import com.cms.pojo.User;
-import com.cms.service.UserService;
+import com.cms.pojo.entity.User;
+import com.cms.service.interf.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

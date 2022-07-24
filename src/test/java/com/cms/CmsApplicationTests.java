@@ -1,8 +1,7 @@
 package com.cms;
 
 import com.cms.mapper.MenuMapper;
-import com.cms.pojo.User;
-import com.cms.service.Impl.AuthorizeServiceImpl;
+import com.cms.pojo.entity.User;
 import com.cms.service.Impl.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

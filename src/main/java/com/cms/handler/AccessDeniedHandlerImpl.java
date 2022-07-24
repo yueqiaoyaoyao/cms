@@ -1,7 +1,7 @@
 package com.cms.handler;
 
 import com.alibaba.fastjson.JSON;
-import com.cms.pojo.ResponseResult;
+import com.cms.pojo.utils.ResponseResult;
 import com.cms.utils.WebUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.AccessDeniedException;

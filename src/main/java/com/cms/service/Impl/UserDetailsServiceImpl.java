@@ -1,18 +1,16 @@
 package com.cms.service.Impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.cms.mapper.AuthorizeMapper;
 import com.cms.mapper.MenuMapper;
 import com.cms.mapper.UserMapper;
-import com.cms.pojo.LoginUser;
-import com.cms.pojo.User;
+import com.cms.pojo.utils.LoginUser;
+import com.cms.pojo.entity.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 

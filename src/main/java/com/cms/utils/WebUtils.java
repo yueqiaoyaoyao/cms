@@ -12,7 +12,7 @@ public class WebUtils
      * @param string 待渲染的字符串
      * @return null
      */
-    public static String renderString(HttpServletResponse response, String string) {
+    public static void renderString(HttpServletResponse response, String string) {
         try
         {
             response.setStatus(200);
@@ -24,6 +24,5 @@ public class WebUtils
         {
             e.printStackTrace();
         }
-        return null;
     }
 }
