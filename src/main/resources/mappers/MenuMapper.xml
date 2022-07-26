@@ -12,4 +12,28 @@
                            on rm.mid = m.mid
         where uid = #{uid} and r.status = 0 and m.status = 0
     </select>
+<!--    selectPathsByUserUid-->
+    <select id="selectPathsByUserUid" resultType="java.lang.String">
+        SELECT distinct m.path
+        FROM `cms_user_role` ur
+                 left join `cms_role` r
+                           on ur.rid = r.rid
+                 left join `cms_role_menu` rm
+                           on ur.rid = rm.rid
+                 left join `cms_menu` m
+                           on rm.mid = m.mid
+        where uid = #{uid} and r.status = 0 and m.status = 0
+    </select>
+<!--    selectAuthsByUserUid-->
+    <select id="selectAuthsByUserUid" resultType="com.cms.pojo.entity.Menu">
+        SELECT distinct m.mid,m.menu_name,m.path,m.icon
+        FROM `cms_user_role` ur
+                 left join `cms_role` r
+                           on ur.rid = r.rid
+                 left join `cms_role_menu` rm
+                           on ur.rid = rm.rid
+                 left join `cms_menu` m
+                           on rm.mid = m.mid
+        where uid = #{uid} and r.status = 0 and m.status = 0
+    </select>
 </mapper>

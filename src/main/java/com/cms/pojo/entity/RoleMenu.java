@@ -15,7 +15,7 @@ import java.io.Serializable;
 public class RoleMenu implements Serializable {
     private static final long serialVersionUID = -3485372716853602512L;
     @MppMultiId
-    private int rid;
+    private Integer rid;
     @MppMultiId
-    private int mid;
+    private Integer mid;
 }

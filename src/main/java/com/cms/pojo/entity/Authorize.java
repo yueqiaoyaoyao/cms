@@ -15,7 +15,7 @@ import java.io.Serializable;
 public class Authorize implements Serializable {
     private static final long serialVersionUID = -7021059299202750640L;
     @MppMultiId
-    private int uid;
+    private Integer uid;
     @MppMultiId
-    private int rid;
+    private Integer rid;
 }

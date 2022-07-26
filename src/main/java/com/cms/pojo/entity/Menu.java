@@ -17,7 +17,7 @@ import java.util.Date;
 public class Menu implements Serializable {
     private static final long serialVersionUID = -1663274841893342721L;
     @TableId
-    private int mid;
+    private Integer mid;
     private String menuName;
     private String path;
     private String component;

@@ -20,7 +20,7 @@ public class UserController {
 
     @ApiOperation("新增用户")
     @PostMapping("/add")
-    @PreAuthorize("hasAuthority('user:add')")
+    @PreAuthorize("hasAuthority('user')")
     public ResponseResult<?> createUser(@RequestBody User user){
         return userService.createdUser(user);
     }
@@ -28,7 +28,7 @@ public class UserController {
 
     @ApiOperation("查询用户")
     @GetMapping("/find")
-    @PreAuthorize("hasAuthority('user:find')")
+    @PreAuthorize("hasAuthority('user')")
     public ResponseResult<?> findPage(@RequestParam(defaultValue = "1") Integer pageNum,
                                       @RequestParam(defaultValue = "5") Integer pageSize,
                                       @RequestParam(defaultValue = "") String search){
@@ -37,7 +37,7 @@ public class UserController {
 
     @ApiOperation("修改用户")
     @PutMapping("/update")
-    @PreAuthorize("hasAuthority('user:update')")
+    @PreAuthorize("hasAuthority('user')")
     public ResponseResult<?> update(@RequestBody User user){
         return userService.update(user);
     }
@@ -46,7 +46,7 @@ public class UserController {
 
     @ApiOperation("删除用户")
     @DeleteMapping("/delete/{uid}")
-    @PreAuthorize("hasAuthority('user:delete')")
+    @PreAuthorize("hasAuthority('user')")
     public ResponseResult<?> delete(@PathVariable int uid){
         return userService.delete(uid);
     }

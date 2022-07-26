@@ -18,7 +18,7 @@ import java.util.Date;
 public class User implements Serializable {
     private static final long serialVersionUID = -6661282615140772297L;
     @TableId(type = IdType.AUTO)
-    private int uid;
+    private Integer uid;
     private String userName;
     private String nickName;
     private String password;
