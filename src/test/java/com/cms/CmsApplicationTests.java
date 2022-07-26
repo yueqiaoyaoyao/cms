@@ -22,8 +22,9 @@ class CmsApplicationTests {
     private UserServiceImpl userService;
     @Test
     void testMybatisPlus(){
-        User user = userService.findByUid(1);
-        System.out.println(user);
+//        User user = userService.findByUid(1);
+//        System.out.println(user);
+        System.out.println();
     }
 
     @Autowired
@@ -51,4 +52,6 @@ class CmsApplicationTests {
     void testAuthorizeService(){
         System.out.println(menuMapper.selectPermsByUserUid(1));
     }
+
+
 }

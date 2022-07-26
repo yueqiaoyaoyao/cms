@@ -33,6 +33,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private AccessDeniedHandlerImpl accessDeniedHandler;
 
+    /**
+     * 配置security的拦截规则
+     * @param http
+     * @throws Exception
+     */
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
